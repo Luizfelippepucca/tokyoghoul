@@ -1,0 +1,511 @@
+body{
+    margin:0;
+    font-family: Arial;
+    font-size: 12px;
+ }
+.topo{
+    height: 30px;
+    background-color:#000000;
+    color:white;
+}
+.topoint{
+    width: 100%;
+    max-width: 1040px;
+    height: 30px;
+    margin: auto;
+    background-color: green;
+}
+.topoleft{
+    width:50%;
+    height: 30px;
+    background-color:#000000;
+    float: left;
+   
+
+}
+.toporight{
+    width: 50%;
+    height: 30px;
+    background-color:#000000;
+    float:left;
+    text-align: right;
+    margin-top:0px;
+}
+.topoleft ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+.topoleft li{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.topoleft li a{
+    text-decoration: none;
+    color:white;
+
+}
+.topoleft li .ativo{
+    color:#1d077e;
+}
+.topobusca{
+    width: 100px;
+    height: 20px;
+    outline: none;
+}
+.toporight a{
+    margin-top: 2px;
+    float: right;
+}
+.toporight input{
+    margin-top:2px;
+    float: right;
+}
+.toporight img{
+    margin: 1px;
+}
+.topo2{
+   height: 95px;
+   color:#000;
+  
+   
+}
+.topo2int{
+    width: 100%;
+    max-width: 1040px;
+    height: 95px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 95px;
+    float:left;
+    margin-top: 5px;
+    
+}
+.topo2 .banner{
+    width: 650px;
+    height: 80px;
+    float:right;
+    background-color: #1d077e;
+    margin-top: 7.5px;
+   }
+.menu{
+    height: 40px;
+    background-color:#ff0000;
+    margin-top: 10px;
+}
+.menuint{ width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+    background-color:#ff0000;
+    background:linear-gradient(90deg,black,red );
+
+}
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.menu li{
+    line-height: 40px;
+    float: left;
+    max-width: 1040px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.menu li:hover .submenu{
+    display: block;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.submenu{
+    width: 100px;
+    background-color:#ff0000;
+    position: absolute;
+    display: none;
+}
+.submenuitem{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+.submenuitem:hover{
+    background-color:#000000;
+}
+.ultimasnoticias{
+    height: 40px;
+    
+}
+.ultimasnoticiasint{
+    width: 1040px;
+    max-width: 100%;
+    height: 50px;
+    margin: auto;
+    }
+.ultnoticiasarea{ 
+     height: 28px;
+     border:1px solid #cccccc;
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 15px;
+}
+.ultnoticiastitulo{
+    height: 28px;
+    background-color: #ff0000;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 28px;
+    color:#fff;
+}
+.ultnoticiasitem{
+    height: 28px;
+    line-height: 28px;
+    color:#000;
+    display: inline-block;
+    padding-left: 5px;
+}
+.containerint{
+    width: 100%;
+    max-width: 1040px;
+    margin:auto;
+    
+    
+}
+.leftside{
+    width:753px;
+    
+    float: left;
+
+}
+.rightside{
+    width: 275px;
+    height: 200px;
+    min-width: 200px;
+    float:right;
+    margin-left: 12px;
+
+}
+.widget{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.titulowidget{
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    padding-left: 5px;
+    border-bottom: 1px solid #ccc;
+    background:linear-gradient(90deg,black,red );
+    color:#fff;
+}
+.notwidget{
+    background-color: #fff;
+    height: auto;
+    padding-top:3px;
+    padding-bottom:3px;
+    text-align: center;
+   
+}
+.notitem{
+    font-size: 14px;
+    margin: 0px 10px ;
+    padding: 10px 0px;
+   text-align: left;
+   border-bottom: 1px solid #ccc;
+ 
+}
+.notitem a{
+    text-decoration: none;
+    color: #000
+}
+.audio{
+    background-color:#fff;
+    height: 50px;
+    width: 300px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.slideshow{
+    height: 335px;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.slideshowarea{
+    width: 100000px;
+    height: 335px;
+    background-color: #ddd;
+    transition: all 1s;
+  
+}
+.slide{
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.slideinfo{
+    height: 70px;
+    background-image:('img/slideshow_bg.png');
+    background-size: auto 70px;
+    margin-top: 265px;
+}
+.slidetitulo{
+    font-size: 20px;
+    color:#000;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.slidesubtitulo{
+    font-size: 13px;
+    color: #000;
+    padding-left: 20px;
+}
+.slidebolinha{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+}
+.bolinha{
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+}
+.noticia1{
+    width: 420px;
+    height: 420px;
+    background-color: #fff;
+    float: left;
+   
+}
+.noticia2{
+    width: 320px;
+    height: 420px;
+    background-color:#fff;
+    float: left;
+    margin-left: 5px;
+    
+}
+.imagemnot1{
+    width: 410px;
+    height: 300px;
+    background-color:#fff;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.resumoimg{
+    width: 410px;
+    height: 100px;
+    background-color: #fff;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 15PX;
+    text-align: left;
+    
+
+}
+.comentario{
+    background-color:#fff;
+    height: 50px;
+    width: 300px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 9px;
+}
+.imgcoment{
+    background-color: #fff;
+    width:40px;
+    max-width: 100%;
+    height: auto;
+    padding-top:3px;
+    padding-bottom:3px;
+    float: left;
+}
+.respostas{
+    background-color: #fff;
+    width: 300px;
+    max-width: 100%;
+    height: 35px;
+    padding-bottom:3px;
+    margin-top: 3px;
+    line-height: 15px;
+    text-align: left;
+}
+.rodape{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    top:1500px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+.menumobile{
+    
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width:1040px)and(max-width:1188px){
+    .topoint,
+    .topo2,
+    .menu,
+    .ultimasnoticiasint,
+    .ultnoticiasarea,
+    .containerint {max-width: 890px;
+    }
+    .leftside
+    {
+        width: 600px;
+    }
+    .noticia1{
+        width: 273px;
+    }
+    .resumoimg{
+        width: 298px;
+    }
+    .imagemnot1 {
+        width: 285px;
+    }
+}
+@media only screen and (min-width:783px) and (max-width:1040px){
+    .topoint,
+    .topo2,
+    .ultimasnoticiasint,
+    .ultnoticiasarea,
+    .containerint {max-width: 768px;
+    }
+    .leftside{
+         width: auto;
+         float: none;
+    }
+    .rightside{
+        display: none;
+    }
+    .noticia1{
+        width: 438px;
+    }
+    .resumoimg{
+        width: 298px;
+        margin-left: 15px;
+    }
+    .imagemnot1 {
+        width: 430px;
+    }
+    .banner{
+        display: none;
+    }
+    .logo{
+        float: none;
+        margin: auto;
+
+    }
+    
+}
+@media only screen and (max-width:783px){
+    .topoint,
+    .ultimasnoticiasint,
+    .menu
+    .ultnoticiasarea,
+    .containerint {max-width: 320px;
+    }
+    .topoleft{
+        display: none;
+    }
+    .toporight{
+        width: 100%
+    }
+    .leftside{
+         width: auto;
+         float: none;
+    }
+    .rightside{
+        display: none;
+    }
+    .noticia1{
+        width: 315px;
+    }
+    .noticia2{
+        width: 313px;
+        height: auto;
+    }
+    .resumoimg{
+        width: 298px;
+        margin-left: 15px;
+    }
+    .imagemnot1 {
+        width: 305px;
+    }
+    .imagemnot1 img{
+        width: 305px;
+    }
+    .banner{
+        display: none;
+    }
+    .logo{
+        float: none;
+        margin: auto;
+
+    }
+    .menuint ul {
+        margin-left:auto;
+
+    }
+    .menu ul{
+        position: absolute;
+        background-color: #ff0000;
+        z-index: 10;
+        display: none;
+        
+
+    }
+    .menu li{
+        float: none;
+        height: auto;
+    }
+    .menumobile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+     }
+    
+    .ultnoticiasarea{
+        display: none;
+    }
+    .audio{ 
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    .rodape{
+        display: none;
+    }
+}

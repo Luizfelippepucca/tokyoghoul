@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal</title>
+        <link href="css/estilo.css"  type="text/css"rel="stylesheet">
+        <script type="text/javascript" src="js/script.js"></script>
+        
+        
+        <meta id="viewport" name="viewport" content="width=device-width, user scalabe=no">
+
+        
+    </head>
+    <body>
+        <div class="topo">
+           <div class="topoint">
+               <div class="topoleft">
+                   <ul>
+                       <li><a href="Home" class="ativo">Home</a></li>
+                       <li><a href="Quem somos">Quem somos</a></li>
+                       <li><a href="Anuncieaqui">Anuncie aqui</a></li>
+                       <li><a href="Contato">Contato</a></li>
+                   </ul>
+               </div>
+               <div class="toporight">
+                   <input type="image" src=img/busca.png border="0" width="26" height="26"  />
+                   <input type="text" name="busca" placeholder="busca..." class="topobusca">
+                   <a href=""><img src="img/yt.png" border="0" width="26" height="26"></a> 
+                   <a href=""><img src="img/gg.jpg" border="0" width="26" height="26"></a> 
+                   <a href=""><img src="img/tt.png" border="0" width="26" height="26"></a> 
+                   <a href="https://www.facebook.com/luizfelippe.puccarodrigues" target="_blank"><img src="img/fb.png" border="0" width="26" height="26"></a> 
+                   <a href=""><img src="img/rss.png" border="0" width="26" height="26"></a> 
+                  
+               </div>
+           </div>
+
+        </div>
+        <div class="topo2">
+            <div class="topo2int">
+            <div class="logo">
+                <img src="img/tokyo.jpg" border="0" width="260" height="95"/>
+            </div>
+            <div class="banner">
+                <img src="img/banner.jpg" width="650" height="80"/>
+            </div>
+        </div>
+        </div>
+        <div class="menu">
+            <div class="menuint">
+                    <img src="img/menu.png" border="0" width="40" height="40" onclick="togglemenu()" class="menumobile"/>
+                     <ul id="menu">
+                    <li><a href="Home" class="ativo">Home</a></li>
+                    <li><a href="Animes">Animes</a></li>
+                    <li>
+                        <a href="Entretenimento">Entretenimento</a>
+                        <div class="submenu">
+                            <div class="submenuitem">Item 1</div>
+                            <div class="submenuitem">Item 2</div>
+                            <div class="submenuitem">Item 3</div>
+                            <div class="submenuitem">Item 4</div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Mangass">Mangas</a>
+                        <div class="submenu"> 
+                                <div class="submenuitem">Item 1</div>
+                                <div class="submenuitem">Item 2</div>
+                                <div class="submenuitem">Item 3</div>
+                        </div>
+                    </li>
+                    <li><a href="Geral">Geral</a></li>
+                    <li>
+                        <a href="Noticias">Noticias</a>
+                        <div class="submenu">
+                                <div class="submenuitem">Item 1</div>
+                                <div class="submenuitem">Item 2</div>
+                                
+                        </div>
+                    </li>
+                    
+                    <li><a href="Videos">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+                <div class="rodape">
+                        © 2019-LFelippe-Desenvolvimento web
+                    
+                </div>
+            </footer>
+        <div class="ultimasnoticias">
+            <div class="ultimasnoticiasint">
+                <div class="ultnoticiasarea">
+                    <div class="ultnoticiastitulo">Últimas novidades</div>
+                    <div class="ultnoticiasitem">Alguma notícia que irá ficar aqui</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="containerint">
+            <div class="leftside">
+                <div class="slideshow" id="slideshow" >
+                    <div class="slidebolinha">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                        <div class="bolinha" onclick="mudarSlide(3)"></div>
+                    </div>
+                    <div class="slideshowarea">
+                        <div class="slide"style="background-image:url('https://i.ytimg.com/vi/18I_QdKvPGE/hqdefault.jpg')">
+                            <div class="slideinfo">
+                                <!--
+                                <div class="slidetitulo"></div>
+                                <div class="slidesubtitulo"></div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="slide"style="background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b7fa2e00-5a91-4497-8348-124bfe0d3e08/dae1n0g-71a54b9c-dd8c-4963-b307-af9c917b6219.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I3ZmEyZTAwLTVhOTEtNDQ5Ny04MzQ4LTEyNGJmZTBkM2UwOFwvZGFlMW4wZy03MWE1NGI5Yy1kZDhjLTQ5NjMtYjMwNy1hZjljOTE3YjYyMTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QnKLg0i5-4b7rc9dgDuWR3auogXyDkeU4l5AxAoxruA')">
+                            <div class="slideinfo">
+                                <!--
+                                <div class="slidetitulo"></div>
+                                <div class="slidesubtitulo"></div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="slide"style="background-image:url('https://i.ytimg.com/vi/MrqKVokRFBQ/maxresdefault.jpg')">
+                            <div class="slideinfo">
+                               <!--
+                                <div class="slidetitulo"></div>
+                                <div class="slidesubtitulo"></div>
+                                -->
+
+                            </div>
+                        </div>
+                        <div class="slide"style="background-image:url('https://static.comicvine.com/uploads/original/11124/111240936/4957760-8982999706-tokyo.jpg')">
+                            <div class="slideinfo">
+                                <!--
+                                <div class="slidetitulo"></div>
+                                <div class="slidesubtitulo"></div>
+                                -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  <!--
+                       <div class="audio">
+                            <audio  controls autoplay>
+                                <source src="unravel.mp3" type="audio/mpeg"/>
+                               
+                            </audio>
+                    </div>
+                    -->
+                    <div class="widget">
+                        <div class="titulowidget">NOTÍCIAS</div>
+                            <div class="notwidget " >
+                                <div class="noticia1">
+                                    <div class="imagemnot1">
+                                        <image src="img/kaneki.jpg" width="410" height="300" border ="0"></image>
+                                    </div>
+                                    <div class="resumoimg">QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI
+                                            QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI<br>
+                                            QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI<br></div>
+                                </div>
+                                <div class="noticia2">
+                                    <div class="comentario">
+                                              <div class="imgcoment">
+                                                    <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+
+                                              </div>
+                                              <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                             
+                                    </div>
+                                        <div class="comentario">
+                                                <div class="imgcoment">
+                                                        <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+    
+                                                  </div>
+                                                  <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                               
+                                        </div>
+                                        <div class="comentario">
+                                                <div class="imgcoment">
+                                                        <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+    
+                                                  </div>
+                                                  <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                        </div>
+                                        <div class="comentario">
+                                                <div class="imgcoment">
+                                                        <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+    
+                                                  </div>
+                                                  <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                               
+                                        </div>
+                                        <div class="comentario">
+                                                <div class="imgcoment">
+                                                        <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+    
+                                                  </div>
+                                                  <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                               
+                                        </div>
+                                        <div class="audio">
+                                                <audio  controls  autoplay >
+                                                    <source src="unravel.mp3" type="audio/mpeg" />
+                                                   
+                                                </audio>
+                                        </div>
+                                        
+                                </div>
+                            <div style="clear: both"></div>
+                            
+                        </div>
+                    </div>
+
+                       <div class="widget ">
+                            <div class="titulowidget">NOTÍCIAS</div>
+                                <div class="notwidget">
+                                    <div class="noticia1">
+                                        <div class="imagemnot1 ">
+                                            <image src="img/kaneki.jpg" width="410" height="300" border ="0"></image>
+                                        </div>
+                                        <div class="resumoimg">QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI
+                                                QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI<br>
+                                                QUALQUER TEXTO QUE VENHA SER COLOCADO AQUI<br></div>
+                                    </div>
+                                    <div class="noticia2 ">
+                                        <div class="comentario">
+                                                  <div class="imgcoment">
+                                                        <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+    
+                                                  </div>
+                                                  <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                                 
+                                        </div>
+                                            <div class="comentario">
+                                                    <div class="imgcoment">
+                                                            <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+        
+                                                      </div>
+                                                      <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                                   
+                                            </div>
+                                            <div class="comentario">
+                                                    <div class="imgcoment">
+                                                            <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+        
+                                                      </div>
+                                                      <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                            </div>
+                                            <div class="comentario">
+                                                    <div class="imgcoment">
+                                                            <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+        
+                                                      </div>
+                                                      <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                                   
+                                            </div>
+                                            <div class="comentario">
+                                                    <div class="imgcoment">
+                                                            <image src="img/kaneki.jpg" width="30" heigth="30" border ="0"></image>
+        
+                                                      </div>
+                                                      <div class="respostas">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</div>
+                                                   
+                                            </div>
+                                            
+                                            
+                                    </div>
+                                <div style="clear: both"></div>
+                                
+                            </div>
+                            
+                        </div>
+                 </div>
+            <div class="rightside">
+                <div class="widget">
+                    <div class="titulowidget">SOCIAL</div>
+                    <div class="notwidget">
+                        <a href=""><img src="img/yt.png" border="0" width="26" height="26"></a> 
+                        <a href=""><img src="img/gg.jpg" border="0" width="26" height="26"></a> 
+                        <a href=""><img src="img/tt.png" border="0" width="26" height="26"></a> 
+                        <a href=""><img src="img/fb.png" border="0" width="26" height="26"></a> 
+                        <a href=""><img src="img/rss.png" border="0" width="26" height="26"></a> 
+                    </div>
+                </div>
+                <div class="widget">
+                        <div class="titulowidget">ULTIMAS NOTÍCIAS</div>
+                        <div class="notwidget">
+                        <div class="notitem">
+                                <a href="">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</a>
+                        </div>
+                        <div class="notitem">
+                                <a href="">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</a>
+                        </div>
+                        <div class="notitem">
+                                <a href="">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</a>
+                        </div>
+                        <div class="notitem">
+                                <a href="">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</a>
+                        </div>
+                        <div class="notitem">
+                                <a href="">Noticias variadas sobre animes,mangas,cosplay e outros tipos de entretenimento sobre o mundo otaku</a>
+                        </div>
+                           
+                            
+                        </div>
+                </div>
+                <div class="widget">
+                        <div class="titulowidget">PUBLICIDADE</div>
+                        <div class="notwidget">
+                            <img src="img/kaneki.gif" width="270" height="220">
+                           
+                        </div>
+                </div>
+                <div class="widget">
+                        <div class="titulowidget"> FACEBOOK</div>
+                        <div class="notwidget">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fb7web%2F&tabs&width=272&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                            
+                                
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+     </body>
+
+</html>
